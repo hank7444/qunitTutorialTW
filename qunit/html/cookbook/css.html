@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cookbook-CSS</title>
+    <link href="../../lib/qunit/qunit-1.14.0.css" type="text/css" rel="stylesheet">
+    
+
+    <style>
+        #colorBox {
+            border: 5px solid red;;
+            font-size: 2em;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;        
+        }
+        
+        #colorBox.hover {
+            background-color: #0F0;
+        }
+
+        /*
+        如果是用css的:hover, 就無法模擬滑鼠移入移出的狀況;
+        #colorBox:hover {
+            background-color: #0F0;
+        }
+        */
+    </style>
+
+</head>
+    <body>
+
+        <div id="colorBox">
+            colorBox
+        </div>
+
+
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+
+		<script type="text/javascript" src="../../lib/jquery/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../../lib/qunit/qunit-1.14.0.js"></script>
+        <script type="text/javascript" src="../../js/cookbook/css.js"></script>
+      
+    </body>
+</html>
